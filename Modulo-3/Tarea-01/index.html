@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+  
+    <title>Divisas</title>
+
+</head>
+
+<body>
+    <center>
+        <form onsubmit="return false">
+            <div class="forma">
+                <div class="imge">
+                    <img class="img" src="https://cdn-icons-png.flaticon.com/512/1040/1040241.png">
+                </div>
+                <div class="input">
+                    <input id="ingresoMoneda" type="number" placeholder="Cantidad de dinero: " required>
+                </div>
+                <div id="botones">
+                    <select id="dropdown" name="moneda" class="form-control">
+                        <option disabled selected>Elige tu Moneda</option>
+                    </select>
+                    <select id="dropdown2" name="moneda2" class="form-control">
+                        <option disabled selected>Elige tu Moneda</option>
+                    </select>
+                </div>
+                    <div class="form-group">
+                        <button id="convertir" onclick="cambiar()">
+                            Convertir
+                        </button>
+                        <div>El valor será de: </div>
+                        <div id="resultado"></div>
+                        <div id="val" class="validacion ocultar">
+                        <div>Validaciones del formulario</div>
+                    </div> 
+                </div>
+        </form>
+    </center>
+
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
