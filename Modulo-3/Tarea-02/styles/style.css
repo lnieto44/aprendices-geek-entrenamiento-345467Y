@@ -1,0 +1,112 @@
+
+.imagenH{
+    width: 100%;
+    height: 500px;
+}
+
+:root{ /*para determinar variables*/
+    --color1:rgb(153, 37, 22);
+    --color2:rgb(109, 37, 25);
+}
+*{
+    box-sizing: border-box;/*si tengo un contenedor que se le agregue este elemento a la medida*/
+
+}
+
+body{
+    background-color: var(--color1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color2);
+    color: white;
+}
+
+.search{
+    background-color: transparent;
+    border: 2px solid var(--color2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 50px;
+    font-size: 25px;
+
+}
+.search::placeholder{
+    color: white;
+    text-align: center;
+    padding: 7rem;
+}
+
+main{
+    display: flex;/*este me acomoda los elementos como quepan, sin espacios*/
+    flex-wrap: wrap;/*este me da un salto de línea entre los elementos*/
+    justify-content: space-around;/*para centrar contenido*/
+    text-align: center;
+
+}
+.movie{
+    width: 300px;
+    margin: 1rem;
+    background-color: var(--color1);
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;/*que el contenido se adapte al componente o targeta*/
+
+}
+.movie img{
+    width: 100%;
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.carousel-inner{
+    max-width: 90%;
+    margin: 5%;
+   
+
+}
+
+.carousel-item img{
+    object-fit: cover; /*ajusta*/
+    height: 300px;
+}
+header nav {
+	float:right;
+	line-height:100px;
+}
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+header nav a:hover {
+	background:#382626;
+	border-radius:50px;
+    
+}
+.container{
+    width: 40%;
+    background-color: rgb(93, 30, 25);
+    margin-top: 5%;
+    line-height: 2rem;
+    padding: 4%;
+    color: white;
+    font-size: 20px;
+
+}
+
