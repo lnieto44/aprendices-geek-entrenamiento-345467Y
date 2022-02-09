@@ -5,7 +5,7 @@
 }
 
 :root{ /*para determinar variables*/
-    --color1:rgb(153, 37, 22);
+    --color1:rgb(172, 55, 40);
     --color2:rgb(109, 37, 25);
 }
 *{
@@ -47,13 +47,14 @@ main{
     flex-wrap: wrap;/*este me da un salto de línea entre los elementos*/
     justify-content: space-around;/*para centrar contenido*/
     text-align: center;
+    color: #fff;
 
 }
 .movie{
-    width: 300px;
+    width: 400px;
     margin: 1rem;
     background-color: var(--color1);
-    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px rgba(22, 20, 20, 0.5);
     position: relative;
     overflow: hidden;/*que el contenido se adapte al componente o targeta*/
 
@@ -101,12 +102,23 @@ header nav a:hover {
 }
 .container{
     width: 40%;
-    background-color: rgb(93, 30, 25);
+    background-color: rgb(112, 33, 27);
     margin-top: 5%;
     line-height: 2rem;
     padding: 4%;
     color: white;
     font-size: 20px;
-
 }
+
+.listarDatos{
+    line-height: 2rem;
+    border: linen;
+}
+
+.logo{
+    width: 100px;
+    height: px;
+}
+
+
 

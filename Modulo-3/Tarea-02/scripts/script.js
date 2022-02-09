@@ -38,8 +38,11 @@ form.addEventListener("submit", (e)=>{//le paso un evento. (e) es un parametro q
   const busqueda = apiHeroes.filter(heroe=>heroe.nombre.toLocaleLowerCase().includes(search.toLocaleLowerCase()));
   //punto filter para buscar, se crea una función y se le asigna que los ponga en miniscula y los compare
   //llamo a las targetas que coincidieron con la busqueda
-  peliculas(busqueda)
-
-    
+  peliculas(busqueda)  
 }) 
+
+
+
+
+
 
