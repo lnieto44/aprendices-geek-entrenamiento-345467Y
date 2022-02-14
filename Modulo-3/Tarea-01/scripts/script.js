@@ -15,15 +15,30 @@ function cambiar() {
     if(ingresoValor<=0){
         let validar = document.getElementById("val");
         validar.className = "validacion";
-        validar.innerText="Ingrese un valor válido (Mayor a 0)";
+        validar.innerText="Ingrese un valor válido";
     } else{
         let validar = document.getElementById("val");
         validar.className = "validacion ocultar";
     }
 
     let valorSalida = 0;
-    
 
+    if(primerValor ==  'Dolar' && segundoValor == 'Dolar'){
+        valorSalida = ingresoValor;
+    }
+    if(primerValor ==  'Peso Colombiano' && segundoValor == 'Peso Colombiano'){
+        valorSalida = ingresoValor;
+    }
+    if(primerValor ==  'Euro' && segundoValor == 'Euro'){
+        valorSalida = ingresoValor;
+    }
+    if(primerValor ==  'Libra Esterlina' && segundoValor == 'Libra Esterlina'){
+        valorSalida = ingresoValor;
+    }
+    if(primerValor ==  'Peso Mexicano' && segundoValor == 'Peso Mexicano'){
+        valorSalida = ingresoValor;
+    }
+    
     if(primerValor ==  'Dolar' && segundoValor == 'Peso Colombiano'){
         valorSalida = ingresoValor * 4000;
     }
